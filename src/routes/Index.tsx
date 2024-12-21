@@ -41,7 +41,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   const taskFromState: ITask = location.state?.task;
-  const [taskToEdit, setTaskToEdit] = useState<ITask | null>(taskFromState ?? null);
+  const [taskToEdit] = useState<ITask | null>(taskFromState ?? null);
 
   useEffect(() => {
     if (taskFromState) {
