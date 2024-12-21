@@ -1,6 +1,6 @@
 import { ID, databases } from "./appwrite";
 import { IPayload } from "../models/interface";
-import { Databases, Query } from "appwrite";
+import { Query } from "appwrite";
 
 const dbID:string = import.meta.env.VITE_APPWRITE_DB_ID;
 const collectionID:string  = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
