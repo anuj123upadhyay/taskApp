@@ -1,11 +1,11 @@
-import {Link,useNavigate} from "react-router-dom"
+import {Link} from "react-router-dom"
 import { PencilIcon } from "@heroicons/react/24/solid"
 import Button from "./Button";
 import { useEffect, useState } from "react";
 import Select from "./Select";
 
 const  Navbar=()=> {
-    const navigate = useNavigate();
+   
 
     const themeArray = ["light", "dark", "system"];
     const [theme, setTheme] = useState(() => {

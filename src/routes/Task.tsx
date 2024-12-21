@@ -34,6 +34,7 @@ const Task = () => {
   },[])
 
   const handleViewTask = (e: React.MouseEvent<HTMLDivElement>, activeTask: ITask) => {
+    e.stopPropagation();
     setIsViewTask(true);
     setSelectedTask(activeTask);
   };
@@ -98,7 +99,7 @@ const handleSelectChange = async (
           <Dialog key={selectedTask.$id} setIsViewTask={setIsViewTask}>
             <TaskItem
               task={selectedTask}
-              handleViewTask={(e) => handleViewTask(e, selectedTask!)}
+              handleViewTask={(e) => handleViewTask( e , selectedTask!)}
               isViewTask={isViewTask}
             />
           </Dialog>
