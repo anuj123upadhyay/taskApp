@@ -6,6 +6,7 @@ export interface IPayload{
     due_date:Date;
     priority?:string;
     done?:boolean;
+    userId?:string
 }
 
 
@@ -15,4 +16,5 @@ export interface ITask extends Models.Document{
     due_date:Date;
     priority?:string;
     done:boolean;
+    userId:string;
 }
